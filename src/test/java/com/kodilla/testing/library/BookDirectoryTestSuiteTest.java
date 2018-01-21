@@ -116,6 +116,7 @@ public class BookDirectoryTestSuiteTest {
 
         //When
         List<Book> NumberOfBooks = bookLibrary.listBooksInHandsOf(userLibrary);
+        System.out.println(NumberOfBooks);
         //Then
         Assert.assertEquals("85020325443",userLibrary.getPeselId());
         Assert.assertEquals(1,NumberOfBooks.size());
